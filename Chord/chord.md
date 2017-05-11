@@ -17,7 +17,7 @@ Phần mềm Chord có khuôn dạng của một thư viện để liên k
 
 Việc ứng dụng chord là đáng tin cậy cho cung cấp bất kỳ yêu cầu xác thực, bộ nhớ đệm, nhân rộng, và thân thiện với người sử dụng đặt tên dữ liệu. không gian khoá phẳng của Chord làm giảm việc thực hiện các tính năng này. ví dụ: mộ ứng dụng có thể xác thực dữ liệu bằng cách lưu trữ nó dưới một khoá được bắt nguồn từ một mật mã băm của dữ liệu. tương tự, một ứng dụng có thể nhân bản dữ liệu bằng cách lưu trữ nó dưới hai khoá riêng biệt bắt nguồn từ việc nhận dạng mức ứng dụng của dữ liệu.     
 
-<image src="../Chord/image/fig1.png" >   
+<image src="../image/fig1.png" >   
  Hình trên là cấu trúc của một loại ứng dụng.
  - **Layer cao nhất** thực hiện chức năng đặc biệt như hệ thống tập tin siêu dữ liệu .
  - **Lớp tiếp theo** thực hiện một bảng băm phân tán  mục đích chung mà nhiều ứng dụng sử dụng để chèn và  lấy các khối dữ liệu được nhận diện với các khoá duy nhất. bảng băm phân tán sẽ lưu trữ và nhân bản các khối. Bảng băm phân tán sử dụng Chord để xác định node chịu trách nhiệm cho việc lưu trữ một khối. và sau đó truyền thông với máy chủ lưu trữ khối trên node đó để đọc hoặc ghi khối.  
